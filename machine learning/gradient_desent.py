@@ -1,4 +1,4 @@
-
+#the following code implements gradent desent and gives the equation for cost function by using which we can predect the cost of houses.
 import numpy as np 
 import matplotlib.pyplot as plt 
 def error(price,price_pre):
