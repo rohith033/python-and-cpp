@@ -1,0 +1,20 @@
+fitting ttraining data correctly but making poor predection is called "bias variance trade off" i.e you cant follow exactly where your training data goes
+cross validation :
+             for dividing data into train and test
+             here we divide data into x parts and we pick x-1 for training and 1 for testing 
+             normally ten fold classification is used i.e divide the data into 10 parts
+confusion matrix:
+                     actual results 
+              t                              if sum along the diagonal is maxium for a model we will chosses that model the when prediction is actual resuts
+              e
+              s
+              t
+              r
+              e
+              s
+              u
+              l
+              t
+              s
+ 
+              
