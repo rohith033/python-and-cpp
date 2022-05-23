@@ -16,5 +16,11 @@ confusion matrix:
               l
               t
               s
- 
+ sensitivity : no of true prections/acutual value
+ specificity : no of false predctions / actual false
+ bias : the difference in true and predicted value 
+ variance : the change in bias with different datasets 
+ a good model have to have low bias and low variance 
+ suprise : sigma(p(X)*log(1/p(X))
+           -sigma(p(x)*log(p(x))
               
