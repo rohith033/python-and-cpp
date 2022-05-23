@@ -23,4 +23,40 @@ confusion matrix:
  a good model have to have low bias and low variance 
  suprise : sigma(p(X)*log(1/p(X))
            -sigma(p(x)*log(p(x))
-              
+           
+           
+           
+           least square fit line(gradient desent)
+           
+           
+           //  import numpy as np 
+import matplotlib.pyplot as plt 
+def error(price,price_pre):
+    cost=np.sum((price-price_pre)**2/len(price))
+    return cost
+def gradient_decent(x,y,it=1000,learrning_rate=0.001):
+    learrning_rate=0.00001
+    price=y
+    slope=0.01
+    intercept=0.01
+    n=float(len(x))
+    previous_cost=None
+    for i in range(it):
+        price_pre=slope*x+intercept
+        cost = error(price,price_pre)
+        if(previous_cost is not None and previous_cost-cost<=1e-6): break
+        previous_cost=cost
+        slope_derivative=-2/n*sum(x*(price-price_pre))
+        intercept_derivative=-2/n*sum(price-price_pre)
+        slope=slope-learrning_rate*(slope_derivative)
+        intercept=intercept-learrning_rate*(intercept_derivative)
+    print(f"slope:{slope},intercept{intercept}")//
+    
+    
+    
+    
+    
+    
+    
+    
+    
